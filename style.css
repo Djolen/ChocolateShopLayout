@@ -36,6 +36,10 @@
     font-weight: bold;
 }
 
+.hamburgerLinks a:hover{
+    border-bottom:2px solid #462B11; 
+}
+
 .heroWrapper h1{
     top: 50%;
     left: 50%;
