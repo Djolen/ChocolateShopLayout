@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chocolate</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        chocolate: "#462B11",
+                        chocolateBanner: "#4E2615",
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+<body>
+    <div class="w-full h-full mt-8 flex flex-col items-center justify-center">
+            <div class="flex justify-between items-center lg:items-start w-full xl:w-3/4 h-full ">
+                <div class="flex items-start justify-center w-1/3">
+                    <svg class="w-[80px] h-6 flex md:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                    <h3 class="mx-4 whitespace-nowrap text-xl font-bold text-chocolate hidden lg:flex">FIND US ON</h3>
+                    <a class="mx-4 hidden md:flex" href=""><img src="assets/icons/facebook (1).svg" alt="" srcset=""></a>
+                    <a class="mx-4 hidden md:flex" href=""><img src="assets/icons/twitter (1).svg" alt="" srcset=""> </a>
+                    <a class="mx-4 hidden md:flex" href=""><img src="assets/icons/instagram.svg" alt="" srcset=""></a>   
+                </div>
+                <div class="flex items-center justify-center w-1/3">
+                    <img src="assets/logo (5).png" alt="" srcset="" class="">
+                </div>
+                <div class="flex items-center justify-center h-full w-1/3">
+                    <img class="mx-6 hidden md:flex" src="assets/icons/search.svg" alt="" srcset="">
+                    <h3 class="mx-6 whitespace-nowrap text-xl font-bold text-chocolate hidden md:flex" >LOG IN</h3>
+                    <img class="mx-6" src="assets/icons/cart.svg" alt="" srcset="">
+                </div>
+            </div>
+
+            <div class="flex justify-center items-center mt-8 text-center navContainer w-full">
+                <input class="mx-6 flex md:hidden text-chocolate" placeholder="Search..." type="text" name="" id="">
+                <img class="mx-6 flex md:hidden" src="assets/icons/search.svg" alt="" srcset="">
+                <a class="hidden md:inline text-xl font-bold text-chocolate mx-2 p-4" href=""> <h3> ALL SWEETS </h3></a>
+                <a class="hidden md:inline text-xl font-bold text-chocolate mx-2 p-4" href=""> <h3> DARK CHOCOLATE </h3></a>
+                <a class="hidden md:inline text-xl font-bold text-chocolate mx-2 p-4" href=""> <h3> WHITE CHOCOLATE </h3></a>
+                <a class="hidden md:inline text-xl font-bold text-chocolate mx-2 p-4" href=""> <h3> HOME MADE </h3></a>
+                <a class="hidden md:inline text-xl font-bold text-chocolate mx-2 p-4" href=""> <h3> CANDY </h3></a>
+            </div>
+    </div>
+    <main class="my-8 w-full flex flex-col items-center justify-center">
+        <div>
+        <div class="bg-chocolateBanner w-full h-[30px]"></div>
+        <div class="bg-red-900 w-full h-[10px]""></div>
+        <div class="heroWrapper relative w-full text-center">
+            <img src="assets/Main Banner.jpg" alt="" class="w-full">
+            <h1 class=" absolute text-white font-bold w-full text-2xl drop-shadow-md lg:text-5xl ">Treat yourself with a little treasure</h1>
+        </div>
+        </div>
+
+        <div class="flex flex-col mt-28 w-full md:w-3/4 xl:w-2/4 md:h-[300px]">
+            <div class="flex flex-col md:flex-row w-full h-1/2 items-center ">
+                <div class="bg-black p-4 w-3/4 md:w-1/2 h-full flex flex-col md:flex-row">
+                    <div class="w-full md:w-1/2">
+                        <img class="rounded md:px-2 h-full" src="assets/featured/Surprise - 1.jpg" alt="">
+                    </div>
+                    <div class="flex flex-col justify-between w-full md:w-1/2  ">
+                        <h3 class="text-white h-full">Surprise your loved
+                            ones with the best
+                            chocolate.</h3>
+                            <button class="text-white bg-red-900 w-full p-1 xl:w-2/3"> SHOP NOW</button>
+                    </div>
+                </div>
+                <div class="bg-white p-4 w-3/4 md:w-1/2 h-full flex flex-col md:flex-row">
+                    <div class="w-full md:w-1/2">
+                        <img class="rounded md:px-2 h-full" src="assets/featured/Surprise - 1.jpg" alt="">
+                    </div>
+                    <div class="flex flex-col justify-between w-full md:w-1/2  ">
+                        <h3 class="text-black h-full">The heavenly bite of
+                            love.</h3>
+                            <button class="text-white bg-red-900 w-full p-1 xl:w-2/3"> SHOP NOW</button>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col-reverse md:flex-row w-full h-1/2 items-center">
+                <div class="bg-white p-4 w-3/4 md:w-1/2 h-full flex flex-col md:flex-row">
+                    <div class="w-full md:w-1/2">
+                        <img class="rounded md:px-2 h-full" src="assets/featured/Surprise - 3.jpg" alt="">
+                    </div>
+                    <div class="flex flex-col justify-between w-full md:w-1/2  ">
+                        <h3 class="text-black h-full">Square, round, and
+                            cube, shapes of love.</h3>
+                            <button class="text-white bg-red-900 w-full p-1 xl:w-2/3"> SHOP NOW</button>
+                    </div>
+                </div>
+                <div class="bg-black p-4 w-3/4 md:w-1/2 h-full flex flex-col md:flex-row">
+                    <div class="w-full md:w-1/2">
+                        <img class="rounded md:px-2 h-full" src="assets/featured/Surprise - 4.jpg" alt="">
+                    </div>
+                    <div class="flex flex-col justify-between w-full md:w-1/2  ">
+                        <h3 class="text-white h-full">This Valentine’s Day,
+                            get your sweetheart
+                            what they’ve wanted.</h3>
+                            <button class="text-white bg-red-900 w-full p-1 xl:w-2/3"> SHOP NOW</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex flex-col items-start justify-center w-3/4 xl:w-2/4 my-12 ">
+            <h1 class="text-4xl font-bold text-red-900 mb-12 md:mb-0">Valentine's favourite</h1>
+            <div class="flex flex-col md:flex-row">
+                <div class="flex flex-col p-2 productsWrapper">
+                    <img src="assets/Products/Chocolate eggs.jpg" alt="">
+                    <h2>Chocolate eggs</h2>
+                    <h2 class="pb-4"> $10 </h2>
+                    <button class="text-white bg-red-900 p-1 w-full md:w-3/4 productsButton"> SHOP NOW</button>
+                </div>
+                <div class="flex flex-col p-2 productsWrapper">
+                    <img src="assets/Products/Dark chocolate.jpg" alt="">
+                    <h2>Dark chocolate</h2>
+                    <h2 class="pb-4"> $10 </h2>
+                    <button class="text-white bg-red-900 p-1 w-full md:w-3/4 productsButton"> SHOP NOW</button>
+                </div>
+                <div class="flex flex-col p-2 productsWrapper">
+                    <img src="assets/Products/Cookies.jpg" alt="">
+                    <h2>Cookies</h2>
+                    <h2 class="pb-4"> $10 </h2>
+                    <button class="text-white bg-red-900 p-1 w-full md:w-3/4 productsButton"> SHOP NOW</button>
+                </div>
+                <div class="flex flex-col p-2 productsWrapper">
+                    <img src="assets/Products/Sweets.jpg" alt="">
+                    <h2> $10 </h2>
+                    <h2 class="pb-4">Sweets</h2>
+                    <button class="text-white bg-red-900 p-1 w-full md:w-3/4 productsButton"> SHOP NOW</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-full md:w-3/4 xl:w-2/4 flex flex-col-reverse md:flex-row">
+            <img class="md:w-1/2" src="assets/david-greenwood.jpg" alt="">
+            <div class="bg-white flex flex-col items-center p-4">
+                <img class="p-2" src="assets/logo (5).png" alt="">
+                <p>Making chocolate is a process that has many steps. First, the cocoa
+                    beans are collected and put in piles or containers to make them
+                    ferment. Fermentation makes the sugar in the beans turn into
+                    alcohol. Then the beans are dried and cleaned. Chocolate makers
+                    must cook the beans, and then crush them to make the cocoa butter
+                    and the chocolate liquor come out of them. 
+                </p>
+            </div>
+        </div>
+    </main>
+    <footer class="flex flex-col items-center justify-center mb-8">
+        <div class="bg-chocolateBanner w-full h-[20px] mb-12"></div>
+        <div class="flex items-center justify-between w-4/5 md:w-3/4 xl:w-1/2 mb-12 ">
+            <div class="flex flex-col text-black items-start">
+                <h2 class="mb-2" id="footerBottomLinks">Direct Links</h2>
+                <a href=""> <h2>Corporate site</h2> </a>
+                <a href=""> <h2>FAQ</h2> </a>
+                <a href=""> <h2>Delevery</h2> </a>
+                <a href=""> <h2>General conditions</h2> </a>
+            </div>
+            <h1 class="text-red-900 text-4xl font-bold text-center hidden md:flex">Chocolate is happiness that<br/>
+                you can eat.
+            </h1>
+            <img src="assets/logo (5).png" alt="">
+        </div>
+        <h1 class="text-red-900 text-2xl w-4/5 font-bold mb-4 text-center md:hidden">Chocolate is happiness that
+            you can eat.
+        </h1>
+        <div class="flex footerBottomLinks">
+            <a href=""> <h2 class="hover:text-red-900">Conditions</h2> </a>
+            <a href=""> <h2 class="hover:text-red-900">Delivery</h2> </a>
+            <a href=""> <h2 class="whitespace-nowrap hover:text-red-900">Legal Notice</h2> </a>
+            <a href=""> <h2 class="hidden md:flex hover:text-red-900">Privacy Statement</h2> </a>
+        </div>
+        <a href=""> <h2 class="md:hidden hover:text-red-900 mb-4">Privacy Statement</h2> </a>
+        <h2>&copy; 2021 Chocolate Premium Serbia</h2>
+    </footer>
+</body>
+</html>
