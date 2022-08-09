@@ -19,11 +19,10 @@
             },
         };
     </script>
-    <script src="script.js"></script>
 </head>
 <body class="relative">
     <!-- HAMBURGER  -->
-    <div class="bg-white/[.99] w-full h-[80%] hidden flex-col items-center justift-center z-50 fixed top-0 p-12" id="hamburgerMenu">
+    <div class="bg-white/[.99] w-full h-[80%] hiddenHamburger flex flex-col items-center justift-center z-50 fixed top-0 p-12" id="hamburgerMenu">
         <svg xmlns="http://www.w3.org/2000/svg" onclick="handleClose()" id="closeButton" class="h-6 w-6 self-end" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
             <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
         </svg>
@@ -36,10 +35,12 @@
         </div>
     </div>
     <!-- END HAMBURGER -->
+
+    <!-- NAVIGATION -->
     <div class="w-full h-full mt-8 flex flex-col items-center justify-center relative">
         <div class="flex justify-between items-center lg:items-start w-full xl:w-3/4 h-full ">
             <div class="flex items-start justify-center w-1/3">
-                <svg class="w-[80px] h-6 flex md:hidden" onclick="handleOpen()" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <svg class="w-[80px] h-6 flex md:hidden" id="openButton" onclick="handleOpen()" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                 </svg>
                 <h3 class="mx-4 whitespace-nowrap text-xl font-bold text-chocolate hidden lg:flex">FIND US ON</h3>
@@ -67,49 +68,58 @@
             <a class="hidden md:inline text-xl font-bold text-chocolate mx-2 p-4" href=""> <h3> CANDY </h3></a>
         </div>
     </div>
-    <main class="my-8 w-full flex flex-col items-center justify-center">
-        <div>
-        <div class="bg-chocolateBanner w-full h-[30px]"></div>
-        <div class="bg-red-900 w-full h-[10px]""></div>
-        <div class="heroWrapper relative w-full text-center">
-            <img src="assets/Main Banner.jpg" alt="" class="w-full">
-            <h1 class=" absolute text-white font-bold w-full text-2xl drop-shadow-md lg:text-5xl ">Treat yourself with a little treasure</h1>
-        </div>
-        </div>
+    <!-- END NAVIGATION -->
 
+    <main class="my-8 w-full flex flex-col items-center justify-center">
+        <!-- HERO -->
+        <div class="flex flex-col w-full">
+            <div class="bg-chocolateBanner w-full h-[30px]"></div>
+            <div class="bg-red-900 w-full h-[10px]"></div>
+            <div class="heroWrapper relative w-full text-center">
+                <img src="assets/Main Banner.jpg" alt="" class="w-full">
+                <h1 class=" absolute text-white font-bold w-full text-2xl drop-shadow-md lg:text-5xl ">Treat yourself with a little treasure</h1>
+            </div>
+        </div>
+        <!-- END HERO -->
+
+        <!-- FEATURE SECTION -->
         <div class="flex flex-col mt-28 w-full md:w-3/4 xl:w-2/4 md:h-[300px]">
+            <!-- ROW -->
             <div class="flex flex-col md:flex-row w-full h-1/2 items-center ">
+                <!-- CARD -->
                 <div class="bg-black p-4 w-3/4 md:w-1/2 h-full flex flex-col md:flex-row">
                     <div class="w-full md:w-1/2">
                         <img class="rounded md:px-2 h-full" src="assets/featured/Surprise - 1.jpg" alt="">
                     </div>
                     <div class="flex flex-col justify-between w-full md:w-1/2  ">
-                        <h3 class="text-white h-full">Surprise your loved
+                        <h3 class="text-white h-full text-sm xl:text-md">Surprise your loved
                             ones with the best
                             chocolate.</h3>
-                            <button class="text-white bg-red-900 w-full p-1 xl:w-2/3"> SHOP NOW</button>
+                            <button class="text-white bg-red-900 w-full p-1 xl:w-3/4"> SHOP NOW </button>
                     </div>
                 </div>
+                <!-- END CARD -->
                 <div class="bg-white p-4 w-3/4 md:w-1/2 h-full flex flex-col md:flex-row">
                     <div class="w-full md:w-1/2">
                         <img class="rounded md:px-2 h-full" src="assets/featured/Surprise - 1.jpg" alt="">
                     </div>
                     <div class="flex flex-col justify-between w-full md:w-1/2  ">
-                        <h3 class="text-black h-full">The heavenly bite of
+                        <h3 class="text-black h-full text-sm xl:text-md">The heavenly bite of
                             love.</h3>
-                            <button class="text-white bg-red-900 w-full p-1 xl:w-2/3"> SHOP NOW</button>
+                            <button class="text-white bg-red-900 w-full p-1 xl:w-3/4"> SHOP NOW </button>
                     </div>
                 </div>
             </div>
+            <!-- END ROW -->
             <div class="flex flex-col-reverse md:flex-row w-full h-1/2 items-center">
                 <div class="bg-white p-4 w-3/4 md:w-1/2 h-full flex flex-col md:flex-row">
                     <div class="w-full md:w-1/2">
                         <img class="rounded md:px-2 h-full" src="assets/featured/Surprise - 3.jpg" alt="">
                     </div>
                     <div class="flex flex-col justify-between w-full md:w-1/2  ">
-                        <h3 class="text-black h-full">Square, round, and
+                        <h3 class="text-black h-full text-sm xl:text-md">Square, round, and
                             cube, shapes of love.</h3>
-                            <button class="text-white bg-red-900 w-full p-1 xl:w-2/3"> SHOP NOW</button>
+                            <button class="text-white bg-red-900 w-full p-1 xl:w-3/4"> SHOP NOW </button>
                     </div>
                 </div>
                 <div class="bg-black p-4 w-3/4 md:w-1/2 h-full flex flex-col md:flex-row">
@@ -117,16 +127,18 @@
                         <img class="rounded md:px-2 h-full" src="assets/featured/Surprise - 4.jpg" alt="">
                     </div>
                     <div class="flex flex-col justify-between w-full md:w-1/2  ">
-                        <h3 class="text-white h-full">This Valentine’s Day,
+                        <h3 class="text-white h-full text-sm xl:text-md">This Valentine’s Day,
                             get your sweetheart
                             what they’ve wanted.</h3>
-                            <button class="text-white bg-red-900 w-full p-1 xl:w-2/3"> SHOP NOW</button>
+                            <button class="text-white bg-red-900 w-full p-1 xl:w-3/4"> SHOP NOW </button>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- END FEATURE SECTION -->
 
-        <div class="flex flex-col items-start justify-center w-3/4 xl:w-2/4 my-12 ">
+        <!-- PRODUCTS -->
+        <div class="flex flex-col items-start justify-center w-3/4 xl:w-2/4 my-12">
             <h1 class="text-4xl font-bold text-red-900 mb-12 md:mb-0">Valentine's favourite</h1>
             <div class="flex flex-col md:flex-row">
                 <div class="flex flex-col p-2 productsWrapper">
@@ -155,7 +167,9 @@
                 </div>
             </div>
         </div>
+        <!-- END PRODUCTS -->
 
+        <!-- SECOND BANNER -->
         <div class="w-full md:w-3/4 xl:w-2/4 flex flex-col-reverse md:flex-row">
             <img class="md:w-1/2" src="assets/david-greenwood.jpg" alt="">
             <div class="bg-white flex flex-col items-center p-4">
@@ -169,9 +183,12 @@
                 </p>
             </div>
         </div>
+        <!-- END SECOND BANNER -->
     </main>
-    <footer class="flex flex-col items-center justify-center mb-8">
-        <div class="bg-chocolateBanner w-full h-[20px] mb-12"></div>
+
+    <!-- FOOTER -->
+    <footer class="flex flex-col items-center justify-center pb-12 bg-white">
+        <div class="bg-chocolateBanner w-full h-[20px] mb-4"></div>
         <div class="flex items-center justify-between w-4/5 md:w-3/4 xl:w-1/2 mb-12 ">
             <div class="flex flex-col text-black items-start">
                 <h2 class="mb-2" id="footerBottomLinks">Direct Links</h2>
@@ -197,5 +214,7 @@
         <a href=""> <h2 class="md:hidden hover:text-red-900 mb-4">Privacy Statement</h2> </a>
         <h2>&copy; 2021 Chocolate Premium Serbia</h2>
     </footer>
+    <!-- END FOOTER -->
 </body>
+<script src="script.js"></script>
 </html>
